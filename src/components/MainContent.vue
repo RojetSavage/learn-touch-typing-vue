@@ -32,7 +32,6 @@ export default {
 	},
 	watch: {
 		$route() {
-			console.log(this.$route)
 			if (this.$route.name != 'home') {
 				this.showWelcome = false
 				this.setupLevel();
@@ -56,7 +55,6 @@ export default {
 			fetch(url, options)
 			.then(response => response.json())
 				.then(response => {
-					console.log(response)
 					this.levelWords = response.text.split(' ').slice(0, 40)
 					this.loading = false;
 				})
@@ -105,7 +103,6 @@ export default {
 		},
 		nextPage() {
 			const totalPageNumbers = Math.ceil(this.levelWords.length / this.wordsPerPage);
-			console.log(totalPageNumbers)
 			if (this.currentWordIndex === this.page * this.wordsPerPage + this.wordsPerPage || this.currentWordIndex === this.levelWords.length) {
 				this.page += 1;
 				this.userInput = '';
@@ -143,7 +140,6 @@ export default {
 		},
 		incrementTimer() {
 			this.timePassed += 1;
-			// console.log(this.timePassed)
 		},
 	},
 	computed: {

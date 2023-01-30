@@ -15,7 +15,6 @@ const randomLoremAPI = async function() {
 		.then(response => response.json())
 		.then(response => {
 			levelWords = response.text.split(' ').slice(0, 40)
-			console.log(levelWords)
 			loading = false;
 		})
 		.catch(err => console.error(err));
