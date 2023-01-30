@@ -48,7 +48,7 @@ export default {
 			const options = {
 				method: 'GET',
 				headers: {
-					'X-RapidAPI-Key': 'd7c8c9f6c4msh4c0de2cc7495514p13567cjsnd47a0cecd4a8',
+					'X-RapidAPI-Key': import.meta.env.VITE_APP_LOREM_API_KEY,
 					'X-RapidAPI-Host': 'lorem-ipsum-by-api-ninjas.p.rapidapi.com'
 				}
 			};
@@ -67,7 +67,7 @@ export default {
 			const options = {
 					method: 'GET',
 					headers: {
-						'X-RapidAPI-Key': 'd7c8c9f6c4msh4c0de2cc7495514p13567cjsnd47a0cecd4a8',
+						'X-RapidAPI-Key': import.meta.env.VITE_APP_RANDOM_WORDS_API_KEY,
 						'X-RapidAPI-Host': 'random-words5.p.rapidapi.com'
 					}
 				};
