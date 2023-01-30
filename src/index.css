@@ -48,7 +48,7 @@ nav {
 }
 
 .dark {
-  background-image: url("../public/darkBackground.svg");
+  background-image: url("/darkBackground.svg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -57,7 +57,7 @@ nav {
   position: absolute;
   top:40vh;
   left: 50vw;
-  background-image: url("../public/lightBackground.svg");
+  background-image: url("/lightBackground.svg");
   border: 20px solid #EAF0F6;
   border-radius: 50%;
   border-top: 20px solid #DB7F8E;
@@ -67,7 +67,7 @@ nav {
 }
 
 .dark .loader{
-  background-image: url("../public/darkBackground.svg");
+  background-image: url("/darkBackground.svg");
   border: 20px solid #2F4562;
   border-top: 20px solid #248071;
 }
